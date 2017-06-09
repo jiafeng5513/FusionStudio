@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConvertCifar</class>
+ <widget class="QWidget" name="ConvertCifar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>474</width>
+    <height>166</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>数据转换-Cifar</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="0">
+    <widget class="QRadioButton" name="LevelDbButton">
+     <property name="text">
+      <string>LevelDB</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="4">
+    <widget class="QPushButton" name="pushButton_BrowserOutput">
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>输出文件夹:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>cifar数据文件夹:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QPushButton" name="pushButton_BrowserInput">
+     <property name="text">
+      <string>浏览</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="4">
+    <widget class="QPushButton" name="pushButton_DoConvert">
+     <property name="text">
+      <string>转换</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QProgressBar" name="progressBar">
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QRadioButton" name="LmDbButton">
+     <property name="text">
+      <string>LMDB</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_outputfolder"/>
+   </item>
+   <item row="2" column="1" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_Inputfolder"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_BrowserInput</sender>
+   <signal>clicked()</signal>
+   <receiver>ConvertCifar</receiver>
+   <slot>Browser1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>358</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>327</x>
+     <y>13</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_BrowserOutput</sender>
+   <signal>clicked()</signal>
+   <receiver>ConvertCifar</receiver>
+   <slot>Browser2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>312</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>251</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_DoConvert</sender>
+   <signal>clicked()</signal>
+   <receiver>ConvertCifar</receiver>
+   <slot>DoConvert()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>340</x>
+     <y>173</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>227</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Browser1()</slot>
+  <slot>Browser2()</slot>
+  <slot>DoConvert()</slot>
+ </slots>
+</ui>
