@@ -1,19 +1,21 @@
-# FusionStudio
-这是一个使用Qt开发的Caffe界面,能够完成一些神经网络的开发工作,这个程序目前还很初级,作者也许会在他高兴的时候进行一些完善.
+## FusionStudio
+这是一个使用Qt开发的Caffe界面.<br>
+Application with user interface for [Caffe](https://github.com/BVLC/caffe)<br>
+==============================
+### 重要通知
+该项目已经停止开发,但是这个构想和计划还在继续,请移步[这里](https://github.com/AngelaViVi/Expressior)<br>
+感谢大家的关注.<br>
 
-下面是配置说明:
+This project has been terminated, but this idea is still alive. Please visit [HERE](https://github.com/AngelaViVi/Expressior).<br>
+Thanks for your star and fork.<br>
+==============================
 
-① 下载代码到本地
+### Build <br>
+1. Visual Studio 2015<br>
+2. Qt5.8.0<br>
+3. OpenCV<br>
 
-② 下载依赖和示例包,解压,组织好目录
-
-③ 开发环境为Visual Studio 2015和Qt5.8.0
-
-资源下载链接:
-
-依赖包:链接：http://pan.baidu.com/s/1eSrHtVs 密码：5urp
-
-示例包:链接：http://pan.baidu.com/s/1qXWyoos 密码：5pvh
-
-演示视频:链接:http://www.bilibili.com/video/av11183841/
-
+### 资源下载链接:<br>
+1. [依赖包/Dependencies](http://pan.baidu.com/s/1eSrHtVs) 密码：5urp<br>
+2. [示例包/Example](http://pan.baidu.com/s/1qXWyoos) 密码：5pvh<br>
+3. [演示视频/video](http://www.bilibili.com/video/av11183841/)<br>

@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FusionStudioClass</class>
+ <widget class="QMainWindow" name="FusionStudioClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1177</width>
+    <height>733</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FusionStudio</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="fusionstudio.qrc">
+    <normaloff>:/FusionStudio/Resources/Dropbox_FUSION_128px_1060231_easyicon.net.ico</normaloff>:/FusionStudio/Resources/Dropbox_FUSION_128px_1060231_easyicon.net.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>4</number>
+    </property>
+    <property name="rightMargin">
+     <number>4</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="viewMode">
+       <enum>QMdiArea::TabbedView</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="tabsMovable">
+       <bool>true</bool>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1177</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_view">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="action_view_Explorer"/>
+    <addaction name="action_view_Console"/>
+   </widget>
+   <widget class="QMenu" name="menu_help">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <property name="separatorsCollapsible">
+     <bool>false</bool>
+    </property>
+    <property name="toolTipsVisible">
+     <bool>false</bool>
+    </property>
+    <addaction name="action_help_Home"/>
+    <addaction name="action_help_About"/>
+   </widget>
+   <widget class="QMenu" name="menu_menu">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="action_view_Preferences"/>
+   </widget>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_file_New"/>
+    <addaction name="action_file_Open"/>
+    <addaction name="action_file_Close"/>
+   </widget>
+   <widget class="QMenu" name="menu_project">
+    <property name="title">
+     <string>项目</string>
+    </property>
+    <addaction name="action_Scan_WorkingDir"/>
+   </widget>
+   <widget class="QMenu" name="menu_build">
+    <property name="title">
+     <string>生成</string>
+    </property>
+    <addaction name="action_Editor"/>
+    <addaction name="action_Training"/>
+    <addaction name="action_Classification"/>
+    <addaction name="action_FeaturesExp"/>
+   </widget>
+   <widget class="QMenu" name="menu_tools">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <widget class="QMenu" name="menu_converter">
+     <property name="title">
+      <string>数据转换</string>
+     </property>
+     <addaction name="action_Convert_Mnist"/>
+     <addaction name="action_Convert_Cifar"/>
+     <addaction name="action_Convert_Image"/>
+    </widget>
+    <addaction name="menu_converter"/>
+    <addaction name="action_DatabaseBrowser"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_view"/>
+   <addaction name="menu_project"/>
+   <addaction name="menu_build"/>
+   <addaction name="menu_tools"/>
+   <addaction name="menu_menu"/>
+   <addaction name="menu_help"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_file_New"/>
+   <addaction name="action_file_Open"/>
+   <addaction name="action_file_Close"/>
+   <addaction name="separator"/>
+   <addaction name="action_Scan_WorkingDir"/>
+   <addaction name="separator"/>
+   <addaction name="action_Editor"/>
+   <addaction name="action_Training"/>
+   <addaction name="action_Classification"/>
+   <addaction name="action_FeaturesExp"/>
+   <addaction name="separator"/>
+   <addaction name="action_DatabaseBrowser"/>
+   <addaction name="separator"/>
+   <addaction name="action_view_Preferences"/>
+   <addaction name="separator"/>
+   <addaction name="action_help_Home"/>
+   <addaction name="action_help_About"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget_Explorer">
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetFloatable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="windowTitle">
+    <string>资源管理器</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_Explorer">
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QTreeView" name="treeView">
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::ClickFocus</enum>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::CustomContextMenu</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_Console">
+   <property name="features">
+    <set>QDockWidget::DockWidgetFloatable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="windowTitle">
+    <string>控制台</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_4">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPlainTextEdit" name="plainTextEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="tabStopWidth">
+        <number>80</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="action_view_Console">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>控制台</string>
+   </property>
+  </action>
+  <action name="action_help_About">
+   <property name="icon">
+    <iconset resource="fusionstudio.qrc">
+     <normaloff>:/FusionStudio/Resources/help_72px_558008_easyicon.net.ico</normaloff>:/FusionStudio/Resources/help_72px_558008_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="action_view_Explorer">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>资源管理器</string>
+   </property>
+  </action>
+  <action name="action_view_Preferences">
+   <property name="icon">
+    <iconset resource="fusionstudio.qrc">
+     <normaloff>:/FusionStudio/Resources/System_Preferences_128px_1175167_easyicon.net.ico</normaloff>:/FusionStudio/Resources/System_Preferences_128px_1175167_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>首选项</string>
+   </property>
+  </action>
+  <action name="action_file_New">
+   <property name="icon">
+    <iconset resource="fusionstudio.qrc">
+     <normaloff>:/FusionStudio/Resources/Folder_Add_128px_1072490_easyicon.net.ico</normaloff>:/FusionStudio/Resources/Folder_Add_128px_1072490_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>新建工作目录</string>
+   </property>
+  </action>
+  <action name="action_file_Open">
+   <property name="icon">
+    <iconset resource="fusionstudio.qrc">
+     <normaloff>:/FusionStudio/Resources/Folder_Open_128px_1072492_easyicon.net.ico</normaloff>:/FusionStudio/Resources/Folder_Open_128px_1072492_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>打开工作目录</string>
+   </property>
+  </action>
+  <action name="action_file_Close">
+   <property name="icon">
+    <iconset resource="fusionstudio.qrc">
+     <normaloff>:/FusionStudio/Resources/Folder_Delete_128px_1072491_easyicon.net.ico</normaloff>:/FusionStudio/Resources/Folder_Delete_128px_1072491_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>关闭工作目录</string>
+   </property>
+  </action>
+  <action name="action_Scan_WorkingDir">
+   <property name="icon">
+    <iconset resource="fusionstudio.qrc">
+     <normaloff>:/FusionStudio/Resources/Fingerprint_Scan_128px_1191479_easyicon.net.ico</normaloff>:/FusionStudio/Resources/Fingerprint_Scan_128px_1191479_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>扫描工作目录</string>
+   </property>
+  </action>
+  <action name="action_Training">
+   <property name="icon">
+    <iconset resource="fusionstudio.qrc">
+     <normaloff>:/FusionStudio/Resources/Run_prompt_128px_1121549_easyicon.net.ico</normaloff>:/FusionStudio/Resources/Run_prompt_128px_1121549_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>训练</string>
+   </property>
+  </action>
+  <action name="action_Classification">
+   <property name="icon">
+    <iconset resource="fusionstudio.qrc">
+     <normaloff>:/FusionStudio/Resources/measure_units_silver_32px_1099530_easyicon.net.ico</normaloff>:/FusionStudio/Resources/measure_units_silver_32px_1099530_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>测试</string>
+   </property>
+  </action>
+  <action name="action_Convert_Mnist">
+   <property name="text">
+    <string>Mnist</string>
+   </property>
+  </action>
+  <action name="action_Convert_Cifar">
+   <property name="text">
+    <string>cifar</string>
+   </property>
+  </action>
+  <action name="action_Convert_Image">
+   <property name="text">
+    <string>图片</string>
+   </property>
+  </action>
+  <action name="action_help_Home">
+   <property name="icon">
+    <iconset resource="fusionstudio.qrc">
+     <normaloff>:/FusionStudio/Resources/home_128px_1110050_easyicon.net.ico</normaloff>:/FusionStudio/Resources/home_128px_1110050_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>开始页面</string>
+   </property>
+  </action>
+  <action name="action_DatabaseBrowser">
+   <property name="icon">
+    <iconset resource="fusionstudio.qrc">
+     <normaloff>:/FusionStudio/Resources/data_128px_1101024_easyicon.net.ico</normaloff>:/FusionStudio/Resources/data_128px_1101024_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>数据集浏览</string>
+   </property>
+  </action>
+  <action name="action_FeaturesExp">
+   <property name="icon">
+    <iconset resource="fusionstudio.qrc">
+     <normaloff>:/FusionStudio/Resources/Camera_128px_1198140_easyicon.net.ico</normaloff>:/FusionStudio/Resources/Camera_128px_1198140_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>特征导出</string>
+   </property>
+  </action>
+  <action name="action_Editor">
+   <property name="icon">
+    <iconset resource="fusionstudio.qrc">
+     <normaloff>:/FusionStudio/Resources/edit_128px_1158388_easyicon.net.ico</normaloff>:/FusionStudio/Resources/edit_128px_1158388_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>编辑</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>plainTextEdit</tabstop>
+ </tabstops>
+ <resources>
+  <include location="fusionstudio.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>treeView</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>on_treeView_customContextMenuRequested(QPoint)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>211</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_view_Preferences</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>PreferencesSetter()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_view_Explorer</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>changeVisible_Explorer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_view_Console</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>changeVisible_Console()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_file_Open</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>FolderUnfolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_file_New</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>FolderCreater()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_file_Close</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>FolderCloser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Scan_WorkingDir</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>WorkingDirScanner()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_DatabaseBrowser</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>DatabaseBrowser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Convert_Mnist</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>MnistConverter()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Convert_Image</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>ImageConverter()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Convert_Cifar</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>CifarConverter()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Classification</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>DoClassification()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>460</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Training</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>Train()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>460</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Editor</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>ShowEditor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>460</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_help_Home</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>ShowHome()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>460</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_FeaturesExp</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>DoFeaturesExp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>588</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_help_About</sender>
+   <signal>triggered()</signal>
+   <receiver>FusionStudioClass</receiver>
+   <slot>ShowAbout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>588</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Train()</slot>
+  <slot>Browser1()</slot>
+  <slot>Browser2()</slot>
+  <slot>Browser3()</slot>
+  <slot>DoConvert_Mnist_Data()</slot>
+  <slot>ShowEditor()</slot>
+  <slot>changeVisible_Explorer()</slot>
+  <slot>changeVisible_Console()</slot>
+  <slot>changeVisible_Converter()</slot>
+  <slot>changeVisible_Utility()</slot>
+  <slot>MnistConverter()</slot>
+  <slot>CifarConverter()</slot>
+  <slot>ImageConverter()</slot>
+  <slot>DatabaseBrowser()</slot>
+  <slot>FolderCreater()</slot>
+  <slot>FolderUnfolder()</slot>
+  <slot>FolderCloser()</slot>
+  <slot>on_treeView_customContextMenuRequested(QPoint)</slot>
+  <slot>PreferencesSetter()</slot>
+  <slot>WorkingDirScanner()</slot>
+  <slot>DoClassification()</slot>
+  <slot>ShowHome()</slot>
+  <slot>DoFeaturesExp()</slot>
+  <slot>ShowAbout()</slot>
+ </slots>
+</ui>

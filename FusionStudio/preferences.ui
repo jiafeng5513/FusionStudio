@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Preferences</class>
+ <widget class="QWidget" name="Preferences">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>624</width>
+    <height>396</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>首选项</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/FusionStudio/Resources/System_Preferences_128px_1175167_easyicon.net.ico</normaloff>:/FusionStudio/Resources/System_Preferences_128px_1175167_easyicon.net.ico</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="3" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="pushButton_Save">
+     <property name="text">
+      <string>保存</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="3">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>路径设置</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="2" colspan="3">
+        <widget class="QLineEdit" name="lineEdit_InstallPath"/>
+       </item>
+       <item row="1" column="2" colspan="3">
+        <widget class="QLineEdit" name="lineEdit_BinPath"/>
+       </item>
+       <item row="3" column="2" colspan="3">
+        <widget class="QLineEdit" name="lineEdit_LibPath"/>
+       </item>
+       <item row="0" column="5">
+        <widget class="QPushButton" name="pushButton_Browser1">
+         <property name="text">
+          <string>浏览</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Lib目录:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Install目录:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Bin目录:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QPushButton" name="pushButton_Browser2">
+         <property name="text">
+          <string>浏览</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="5">
+        <widget class="QPushButton" name="pushButton_Browser3">
+         <property name="text">
+          <string>浏览</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="QPushButton" name="pushButton_ComponemtCheck">
+         <property name="text">
+          <string>组件校验</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>组件状态:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2" rowspan="3" colspan="4">
+        <widget class="QPlainTextEdit" name="plainTextEdit_ComponentState">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="7" column="5">
+        <widget class="QPushButton" name="pushButton_PathSetDefault">
+         <property name="text">
+          <string>默认目录</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>命令设置</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="1" column="1">
+        <widget class="QPushButton" name="pushButton_ScriptsSetDefault">
+         <property name="text">
+          <string>恢复默认</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QTableView" name="tableView">
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>true</bool>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="fusionstudio.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_Browser1</sender>
+   <signal>clicked()</signal>
+   <receiver>Preferences</receiver>
+   <slot>Browser1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>571</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>617</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Browser2</sender>
+   <signal>clicked()</signal>
+   <receiver>Preferences</receiver>
+   <slot>Browser2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>595</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>618</x>
+     <y>77</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Browser3</sender>
+   <signal>clicked()</signal>
+   <receiver>Preferences</receiver>
+   <slot>Browser3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>583</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>619</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_ComponemtCheck</sender>
+   <signal>clicked()</signal>
+   <receiver>Preferences</receiver>
+   <slot>checkComponent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>404</x>
+     <y>347</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>618</x>
+     <y>336</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_PathSetDefault</sender>
+   <signal>clicked()</signal>
+   <receiver>Preferences</receiver>
+   <slot>setDefaultPath()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>477</x>
+     <y>348</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>617</x>
+     <y>304</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Save</sender>
+   <signal>clicked()</signal>
+   <receiver>Preferences</receiver>
+   <slot>save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>608</x>
+     <y>397</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>619</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_ScriptsSetDefault</sender>
+   <signal>clicked()</signal>
+   <receiver>Preferences</receiver>
+   <slot>setDefaultScripts()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>575</x>
+     <y>346</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>618</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Browser1()</slot>
+  <slot>Browser2()</slot>
+  <slot>Browser3()</slot>
+  <slot>checkComponent()</slot>
+  <slot>setDefaultPath()</slot>
+  <slot>creatEnvironmentVariable()</slot>
+  <slot>save()</slot>
+  <slot>Exit()</slot>
+  <slot>setDefaultScripts()</slot>
+ </slots>
+</ui>

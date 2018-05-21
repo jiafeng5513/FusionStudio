@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{b8082d35-ea78-4c6d-8807-7b3911d03dfa}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{3f17d3f5-86b3-4259-9589-5dd837be0515}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="界面文件">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fusionstudio.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fusionstudio.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fusionstudio.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_fusionstudio.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Project.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Project.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Project.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_trainingsetter.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_trainingsetter.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="trainingsetter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_convertmnist.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_convertmnist.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="convertmnist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_convertcifar.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_convertcifar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="convertcifar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_convertimage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_convertimage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="convertimage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_browsedatabase.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_browsedatabase.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="browsedatabase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_preferences.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_preferences.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="preferences.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_myhighlighter.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_myhighlighter.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="myhighlighter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_editor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_editor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="editor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DbReaderTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DbOperator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_homepage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_homepage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="homepage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Arrow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DiagramItem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DiagramScene.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="DiagramScene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_neteditor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_neteditor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="neteditor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_classification.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_classification.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="classification.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_featureexp.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_featureexp.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="featureexp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DataConverter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DiagramScene.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_about.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_about.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="about.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="fusionstudio.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fusionstudio.ui">
+      <Filter>界面文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fusionstudio.qrc">
+      <Filter>资源文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Project.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="trainingsetter.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="trainingsetter.ui">
+      <Filter>界面文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="convertmnist.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="convertmnist.ui">
+      <Filter>界面文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="convertcifar.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="convertcifar.ui">
+      <Filter>界面文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="convertimage.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="convertimage.ui">
+      <Filter>界面文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="browsedatabase.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="browsedatabase.ui">
+      <Filter>界面文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="preferences.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="preferences.ui">
+      <Filter>界面文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="myhighlighter.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="editor.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="homepage.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="homepage.ui">
+      <Filter>界面文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DiagramScene.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="neteditor.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="neteditor.ui">
+      <Filter>界面文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="classification.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="classification.ui">
+      <Filter>界面文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="featureexp.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="featureexp.ui">
+      <Filter>界面文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="about.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="about.ui">
+      <Filter>界面文件</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_fusionstudio.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_trainingsetter.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_convertmnist.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_convertcifar.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_convertimage.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_browsedatabase.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_preferences.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="typedef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DbReaderTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DbOperator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_homepage.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Arrow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DiagramItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_neteditor.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_classification.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_featureexp.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataConverter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_about.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

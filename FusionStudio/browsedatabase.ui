@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BrowseDatabase</class>
+ <widget class="QWidget" name="BrowseDatabase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>572</width>
+    <height>398</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BrowseDatabase</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <widget class="QRadioButton" name="radioButton_lmdb">
+     <property name="text">
+      <string>lmdb</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QRadioButton" name="radioButton_leveldb">
+     <property name="text">
+      <string>leveldb</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="8">
+    <widget class="QSlider" name="zoomSlider">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="8">
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="7">
+    <widget class="QPushButton" name="pushButton_NextImage">
+     <property name="text">
+      <string>下一张</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="7">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>加载数据集</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="14">
+    <widget class="QGraphicsView" name="graphicsView"/>
+   </item>
+   <item row="2" column="1">
+    <widget class="QCheckBox" name="checkBox_ForcedDecoding">
+     <property name="text">
+      <string>强制解码</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>BrowseDatabase</receiver>
+   <slot>LoadDatabase()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>261</x>
+     <y>28</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>417</x>
+     <y>13</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_NextImage</sender>
+   <signal>clicked()</signal>
+   <receiver>BrowseDatabase</receiver>
+   <slot>Nextimage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>261</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>417</x>
+     <y>37</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>zoomSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>BrowseDatabase</receiver>
+   <slot>ZoomImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>532</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_ForcedDecoding</sender>
+   <signal>clicked()</signal>
+   <receiver>BrowseDatabase</receiver>
+   <slot>CrashWarning()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>137</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>LoadDatabase()</slot>
+  <slot>Nextimage()</slot>
+  <slot>ZoomImage()</slot>
+  <slot>CrashWarning()</slot>
+ </slots>
+</ui>
