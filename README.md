@@ -12,8 +12,8 @@ Thanks for your star and fork.<br>
 
 ### Build <br>
 1. Visual Studio 2015<br>
-2. Qt5.8.0<br>
-3. OpenCV<br>
+2. Qt 5.8.0<br>
+3. OpenCV 3.1.0<br>
 
 ### 资源下载链接:<br>
 1. [依赖包/Dependencies](http://pan.baidu.com/s/1eSrHtVs) 密码：5urp<br>
